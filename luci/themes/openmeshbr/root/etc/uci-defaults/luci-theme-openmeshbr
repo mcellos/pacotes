@@ -1,0 +1,6 @@
+#!/bin/sh
+uci batch <<-EOF
+	set luci.themes.openmeshbr=/luci-static/openmeshbr
+	commit luci
+EOF
+exit 0

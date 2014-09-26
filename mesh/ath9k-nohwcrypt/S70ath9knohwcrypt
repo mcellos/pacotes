@@ -1,0 +1,12 @@
+#!/bin/sh /etc/rc.common
+
+START=70
+
+start() {
+  echo "ath9k nohwcrypt=1" >/etc/modules.d/28-ath9k
+  rm -f /etc/rc.d/S70ath9knohwcrypt
+}
+
+stop() {
+  echo stop
+}
